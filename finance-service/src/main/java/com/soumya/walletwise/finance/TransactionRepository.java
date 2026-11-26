@@ -1,0 +1,1 @@
+package com.soumya.walletwise.finance;import org.springframework.data.domain.*;import org.springframework.data.mongodb.repository.*;import java.util.*;interface TransactionRepository extends MongoRepository<Transaction,String>{Page<Transaction> findByUserId(String userId,Pageable pageable);Optional<Transaction> findByIdAndUserId(String id,String userId);}

@@ -1,0 +1,2 @@
+rootProject.name = 'walletwise'
+include 'auth-service', 'finance-service'
